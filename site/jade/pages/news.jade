@@ -1,0 +1,18 @@
+extends  ../_skeleton
+include ../mixins/_mixins.jade
+block variables
+  - var activeIndex = 5
+
+block title
+  title News
+
+block page
+  // Page Header
+  include ../elements/_header
+
+  // Page Content
+  main.page-content
+    include ../sections/news/_section-news-1
+
+  // Page Footer
+  include ../elements/_footer

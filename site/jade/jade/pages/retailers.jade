@@ -1,0 +1,19 @@
+extends  ../_skeleton
+
+block variables
+  - var activeIndex = 3
+
+block title
+  title Retailers
+
+block page
+  // Page Header
+  include ../elements/_header
+
+  // Page Content
+  main.page-content
+    include ../sections/retailers/_section-retailers-1
+    include ../sections/retailers/_section-retailers-2
+
+  // Page Footer
+  include ../elements/_footer

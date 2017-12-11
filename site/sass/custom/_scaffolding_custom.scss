@@ -1,0 +1,148 @@
+//
+// Scaffolding Custom
+// --------------------------------------------------
+body {
+  font-weight: $font-weight-base;
+}
+
+.page-foot {
+  h6 {
+    color: $white;
+  }
+  background-color: $gray-darker;
+  .rd-mailform {
+    max-width: 100%;
+    @media (min-width: $screen-xs-min) {
+      .mfInput {
+        input {
+          border-right: none;
+        }
+      }
+    }
+    @media (max-width: $screen-xs-min - 1) {
+      button {
+        margin-top: 20px;
+      }
+    }
+    & + * {
+      margin-top: 15px;
+    }
+    button {
+      height: 50px;
+      flex:none;
+    }
+  }
+  * + .list-inline {
+    margin-top: 15px;
+    @media (min-width: $screen-lg-min) {
+      margin-top: 42px;
+    }
+  }
+  * + [class*='cell-'] {
+    margin-top: 45px;
+    @media (min-width: $screen-lg-min) {
+      margin-top: 0;
+    }
+  }
+  @media (max-width: $screen-lg-min - 1) {
+    .rd-navbar-brand {
+      .brand-name {
+        span {
+          font-size: 40px;
+        }
+        &:before {
+          @include transform(scale(0.55));
+          top: 7px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $screen-lg-min) and (max-width: 1599px) {
+    .rd-navbar-brand {
+      .brand-name {
+        span {
+          font-size: 40px;
+        }
+        line-height: 32px;
+        &:before {
+          @include transform(scale(0.55));
+          top: 1px;
+        }
+      }
+    }
+  }
+
+  .list-marked {
+    li.active {
+      a {
+        color: $brand-primary;
+      }
+    }
+  }
+  .btn-primary {
+    &:active, &:focus {
+      border-color: $brand-primary;
+    }
+    &:active:focus {
+      border-color: $brand-primary;
+    }
+    &:hover {
+      border-color: $brand-primary;
+    }
+  }
+  .rd-navbar-brand .brand-name{
+    @media (min-width: 1600px) {
+      padding-left: 62px;
+      &:before{
+        left:0;
+      }
+    }
+  }
+  
+  &.footer-minimal{
+    * + [class*='cell-'] {
+      margin-top: 0;
+    }
+      .list-marked li{
+      display: inline-block;
+     a:before{
+        display: none;
+      }
+      & + li{
+        margin-top: 0;
+        margin-left: 4px;
+        &:before{
+          content: "|";
+          margin-right: 10px;
+        }
+      }
+    }
+    h6 + *{
+      margin-top: 0;
+    }
+  }
+  &.footer-center{
+    * + [class*='cell-'] {
+      margin-top: 30px;
+    }
+    h6 + *{
+      margin-top: 0;
+    }
+    .list-marked li{
+      display: inline-block;
+      a:before{
+        display: none;
+      }
+      & + li{
+        margin-top: 0;
+        margin-left: 4px;
+        &:before{
+          content: "|";
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  
+}

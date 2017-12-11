@@ -1,0 +1,93 @@
+//
+// Icons
+// --------------------------------------------------
+
+// Base styles
+// --------------------------------------------------
+
+.icon {
+  text-align: center;
+  &:before {
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    font-style: normal;
+    speak: none;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+// Alternate icons
+// --------------------------------------------------
+
+.icon-default {
+  color:$gray-darker;
+}
+.icon-default-2{
+  background-color:$gray-darker;
+  color:$white;
+  transition: .3s;
+  &:active, &:focus{
+    background-color:$gray-darker;
+    color:$white;
+  }
+  &:active:focus{
+    background-color:$gray-darker;
+    color:$white;
+  }
+  &:hover{
+    background-color: $brand-primary;
+    color:$white;
+  }
+}
+.icon-primary {
+
+}
+.icon-emperor{
+  background-color: #3f3f3f;
+  color:$gray-base;
+  transition: .3s;
+  &:active,&:focus{
+    background-color: #3f3f3f;
+    color:$gray-base;
+  }
+  &:active:focus{
+    background-color: #3f3f3f;
+    color:$gray-base;
+  }
+  &:hover{
+    background-color: $brand-primary;
+    color:$white;
+  }
+}
+.icon-white {
+  color: $white;
+}
+
+// Button Sizes
+// --------------------------------------------------
+
+.icon-xs {
+  font-size: 16px;
+}
+
+.icon-sm {
+  font-size: 18px;
+  line-height: 2.85;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+.icon-md{
+  display: inline-block;
+  text-align: center;
+  font-size: 22px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+}
+.icon-lg {
+
+}
