@@ -1,0 +1,18 @@
+extends  ../_skeleton
+block variables
+  - var activeIndex = 1
+
+block title
+  title Payment
+
+block page
+  // Page Header
+  include ../elements/_header
+  // Page Content
+  main.page-content
+    include ../sections/payment/_section-payment-1
+    include ../sections/payment/_section-payment-2
+
+
+  // Page Footer
+  include ../elements/_footer

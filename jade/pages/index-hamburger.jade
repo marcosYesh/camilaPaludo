@@ -1,0 +1,22 @@
+extends  ../_skeleton
+
+block variables
+  - var activeIndex = 1
+  - var rd_header_class_adjuster = "header-hamburger"
+
+block title
+  title Header Hamburger
+
+block page
+  // Page Header
+  include ../elements/_header_hamburger
+
+
+  // Page Content
+  main.page-content
+
+    include ../sections/index/_section-index-1
+    include ../sections/index/_section-index-2
+
+  // Page Footer
+  include ../elements/_footer

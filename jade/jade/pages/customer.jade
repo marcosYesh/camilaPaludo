@@ -1,0 +1,18 @@
+extends  ../_skeleton
+block variables
+  - var activeIndex = 1
+
+block title
+  title Customer Info
+
+block page
+  // Page Header
+  include ../elements/_header
+  // Page Content
+  main.page-content
+    include ../sections/customer/_section-customer-1
+    include ../sections/customer/_section-customer-2
+
+
+  // Page Footer
+  include ../elements/_footer

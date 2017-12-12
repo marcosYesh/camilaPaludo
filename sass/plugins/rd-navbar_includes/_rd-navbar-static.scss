@@ -1,0 +1,122 @@
+/*
+* Static Layout
+*/
+
+$navbar-static-nav-indent: 51px;
+
+$navbar-static-nav-color: $navbar-nav-color;
+$navbar-static-nav-background: $navbar-nav-background;
+$navbar-static-nav-hover-color: $navbar-nav-hover-color;
+$navbar-static-nav-hover-background: $navbar-nav-hover-background;
+$navbar-static-nav-active-color: $navbar-nav-active-color;
+$navbar-static-nav-active-background: $navbar-nav-active-background;
+
+
+.rd-navbar-static {
+  display: block;
+
+  .rd-navbar-panel {
+    padding: 10px 0;
+    @media (min-width: 1600px) {
+      padding: 70px 0;
+    }
+  }
+
+  .rd-navbar-brand{
+    display: table-cell;
+    vertical-align: middle;
+
+    > *{
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    > img{
+      margin-right: 10px;
+    }
+
+    > a{
+      //font-size: 36px;
+      //line-height: 48px;
+    }
+  }
+
+  .rd-navbar-collapse{
+    display: block;
+    float: right;
+    margin-left: -15px;
+    margin-top: 23px;
+
+    li{
+      display: inline-block;
+      margin-left: 15px;
+
+      a:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .rd-navbar-panel, .rd-navbar-nav-wrap {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .rd-navbar-panel {
+    @include clearfix;
+    text-align: left;
+    //min-width: 190px;
+    //max-width: 200px;
+  }
+
+  .rd-navbar-panel-canvas{
+    position: fixed;
+    height: 56px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: $white;
+    z-index: 16;
+  }
+
+  .rd-navbar-toggle{
+    position: fixed;
+    z-index: 17;
+    top: 4px;
+    left: 4px;
+  }
+
+  .rd-navbar-nav-wrap {
+    width: 64%;
+    text-align:center;
+    @media (min-width: 1600px) {
+      text-align: center;
+      width: 50%;
+    }
+  }
+
+  .rd-navbar-nav{
+    margin-bottom: 0;
+
+    > li {
+      display: inline-block;
+      & + li{
+        margin-left: 30px;
+        @media (min-width: 1600px) {
+          margin-left: $navbar-static-nav-indent;
+
+        }
+      }
+    }
+  }
+
+  // RD Navbar States
+  .rd-navbar-static--visible{
+    display: block;
+  }
+
+  .rd-navbar-static--hidden{
+    display: none;
+  }
+}
+

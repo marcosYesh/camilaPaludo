@@ -1,0 +1,21 @@
+extends  ../_skeleton
+
+block variables
+  - var activeIndex = 4
+
+block title
+  title Our Team
+
+block page
+  // Page Header
+  include ../elements/_header
+  // Page Content
+  main.page-content
+    include ../sections/team/_section-team-1
+    include ../sections/team/_section-team-2
+    include ../sections/team/_section-team-3
+    include ../sections/team/_section-team-4
+    include ../sections/team/_section-team-5
+
+  // Page Footer
+  include ../elements/_footer

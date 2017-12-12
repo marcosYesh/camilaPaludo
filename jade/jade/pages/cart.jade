@@ -1,0 +1,16 @@
+extends  ../_skeleton
+block variables
+  - var activeIndex = 1
+
+block title
+  title Shopping Cart
+
+block page
+  // Page Header
+  include ../elements/_header
+  // Page Content
+  main.page-content
+    include ../sections/cart/_section-cart-1
+
+  // Page Footer
+  include ../elements/_footer
