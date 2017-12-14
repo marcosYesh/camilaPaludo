@@ -30400,7 +30400,8 @@ img.mfp-img {
 */
 .rd-navbar {
   display: none;
-  background: #292929;
+  background: #FFF;
+  color : black;
   box-shadow: none;
 }
 
@@ -30411,7 +30412,7 @@ img.mfp-img {
   height: 48px;
   line-height: 48px;
   cursor: pointer;
-  color: #fff;
+  color: #CFCFCF;
   background-color: transparent;
   border: none;
   display: none;
