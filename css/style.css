@@ -24327,6 +24327,12 @@ a.figure-3 {
   height: 350px;
 }
 
+a.figure-3a {
+  background: url("../images/index-2a.jpg") no-repeat top left;
+  background-size: cover;
+  height: 478px;
+}
+
 @media (min-width: 992px) {
   a.figure-3 {
     height: auto;
