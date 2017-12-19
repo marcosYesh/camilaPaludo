@@ -11066,7 +11066,7 @@ hr {
 }
 
 .icon-emperor {
-  background-color: #3f3f3f;
+  background-color: #fff;
   color: #a1a1a1;
   transition: .3s;
 }
@@ -24308,12 +24308,14 @@ a.figure {
 
 a.figure .figure-caption {
   position: absolute;
-  top: 13%;
-  left: 6%;
+  top: 5%;
+  left: 20%;
+  text-align: center;
 }
 
 a.figure .figure-caption .h4 {
   transition: .3s;
+  font-size: 18px;
 }
 
 a.figure-2 .figure-caption {
@@ -30519,6 +30521,9 @@ img.mfp-img {
   content: url("../images/logo.png");
   display: inline-block;
   left: -15px;
+  margin-top: -15px;
+  top: -15px;
+  padding-top: -15px;
 }
 
 /*Right panel */
@@ -31376,7 +31381,8 @@ img.mfp-img {
   top: 0;
   right: 0;
   z-index: 999;
-  background: #292929;
+  background: #fff;
+  min-height: 135px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -32826,10 +32832,10 @@ ul ul, ul ol, ol ul, ol ol {
 }
 
 .rd-parallax[class*="rd-parallax-overlay"] {
-  background-color: #a1a1a1;
+  background-color: #fff;
   color: #fff;
 }
-
+//#a1a1a1
 .rd-parallax[class*="rd-parallax-overlay"] .rd-parallax-layer[data-type="media"] {
   opacity: 0.2;
 }
